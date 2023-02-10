@@ -32,7 +32,7 @@ function setTheTable(): Table {
 	return table;
 }
 
-export function attendATeaParty() {
+export function attendATeaParty() : void { // return type void
 	clear(true);
 	print('The Mad Hatter 🎩 welcomes you to his tea party ☕ ');
 
@@ -53,7 +53,6 @@ export function attendATeaParty() {
 	}
 
 	let properlySet = true;
-
 	drinks.seats.forEach((seat) => {
 		if (!seat.drink.poured || seat.drink.type !== 'Tea') {
 			properlySet = false;

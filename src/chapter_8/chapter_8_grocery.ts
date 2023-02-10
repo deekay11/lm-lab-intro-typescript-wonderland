@@ -31,6 +31,5 @@ function chooseGrocery(input: string) {
   } else {
     print(`😮 Sorry, ${input} is not a valid option.`);
   }
-
   return askQuestion('Press ENTER to restart WonderLand! ', haveAdventures); 
 }

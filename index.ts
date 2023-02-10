@@ -30,17 +30,13 @@ function failImmediately() {
 	return endAdventure();
 }
 
-const numberBiggerThanThree: number = 11; // 👉 FIXME ❌
-
-// 👉 FIXME ❌
+const numberBiggerThanThree: number = 11;
 function checkEntryCodeIsBiggerThanThree(code: number) {
-	return code > 3; // 👉 FIXME ❌
+	return code > 3;
 }
-
 export function endAdventure(): void {
 	print('***************************************');
 	print('You did not make it through Wonderland. 😭');
 	askQuestion('Press ENTER to restart! ', haveAdventures);
 }
-
 haveAdventures();
