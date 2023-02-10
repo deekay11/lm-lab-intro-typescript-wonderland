@@ -1,5 +1,6 @@
 import { endAdventure, haveAdventures } from '../..';
 import { askQuestion, clear, print } from '../ui/console';
+import { takeAWalkInThePark } from '../chapter_7/chapter_7_walk';
 
 // ⚠️ This is a very unusual type setup. It's not a great idea in the real world
 // to nest so many properties with the exact same name.
@@ -36,10 +37,8 @@ export function wakeUp(): void {
 			'✅ CONGRATULATIONS! You successfully made it through Wonderland! 🥳'
 		);
 
-		return askQuestion(
-			'Press ENTER to re-enter Wonderland! ',
-			haveAdventures
-		);
+		return askQuestion('Press ENTER to continue! ', takeAWalkInThePark);
+		
 	} else {
 		print('You are unable to wake up! 😱');
 		return endAdventure();
@@ -47,6 +46,14 @@ export function wakeUp(): void {
 }
 
 function tryToWakeUp(): WakeUp {
-	// 👉 FIXME ❌
-	return {};
+	
+	return {
+		wake: {
+			wake: {
+				wake: {
+					canWake: 'Yes',
+					},
+				},
+			},
+		};
 }

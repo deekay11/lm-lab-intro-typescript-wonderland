@@ -177,6 +177,7 @@ function someFunction(someParams : Array<Stuff>){
 
 TypeScript will infer the type of `someResult` for you.
 
+
 💡 _A good rule of thumb: Be strict about function inputs, and let TypeScript infer the types of outputs_! i.e. Always put type annotations on function inputs, but only add return type annotations when you need them (like we did in the example above).
 
 👉 Time to leave Wonderland in [activity 6](./activity_6.md).
